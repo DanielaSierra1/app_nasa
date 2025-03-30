@@ -5,7 +5,7 @@ import 'package:app_nasa/services/nasa_api.dart';
 import 'package:translator/translator.dart' as translator;
 
 class HomeScreen extends StatefulWidget {
-  const HomeScreen({Key? key}) : super(key: key);
+  const HomeScreen({super.key});
 
   @override
   _HomeScreenState createState() => _HomeScreenState();
@@ -112,7 +112,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
 class DetailScreen extends StatefulWidget {
   final APOD apod;
-  const DetailScreen({Key? key, required this.apod}) : super(key: key);
+  const DetailScreen({super.key, required this.apod});
 
   @override
   _DetailScreenState createState() => _DetailScreenState();
